@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>MapTest</name>
+    <description/>
+    <Style id="blueLine">
+	   <LineStyle>
+		<color>ffff0000</color>
+		<width>1</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+	<Style id="redLine">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>1</width>
+      </LineStyle>
+	  <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+	 <Style id="greenLine">
+      <LineStyle>
+        <color>ff009900</color>
+        <width>1</width>
+      </LineStyle>
+	  <PolyStyle>
+		 <text><![CDATA[<h3>$[name]</h3>]]></text>
+	  </PolyStyle>
+    </Style>
+	<Folder>
+      <name>curve</name>
+      <Placemark>
+        <name>indTOjpn</name>
+        <styleUrl>#blueLine</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            77.1679688,28.7676591,0
+            139.7460938,35.8890501,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+	  
+	  <Placemark>
+        <name>indTOthai</name>
+        <styleUrl>#redLine</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            77.1679688,28.7676591,0
+            100.501765,13.756331,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+	  
+	  <Placemark>
+        <name>UsToIreland</name>
+        <styleUrl>#greenLine</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -6.260310,53.349805,0
+            -77.036871,38.907192,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+ </Document>
+</kml>
